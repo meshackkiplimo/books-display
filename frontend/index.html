@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bookstore</h1>
+        
+        <!-- Form to add a new book -->
+        <div class="add-book-form">
+            <h2>Add a New Book</h2>
+            <form id="book-form">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author Name" required>
+                <input type="number" id="price" placeholder="Price" step="0.01" required>
+                <input type="number" id="stock" placeholder="Stock" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+        <div class="fetch-books">
+            <h2>Fetch Books</h2>
+            <button id="fetch-books">Fetch Books</button>
+
+        </div>
+
+        <!-- List of books -->
+        <div class="book-list">
+            <h2>Available Books</h2>
+            <div id="books-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
